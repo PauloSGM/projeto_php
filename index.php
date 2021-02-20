@@ -26,19 +26,20 @@
 <div class="container">
     <div class="row">
     <div class=" col-md-4"></div>
-<h2>Detalhes do Produto</h2></div>
+<h2>Opção escolhida</h2></div>
 <div class="col-md-4">
 
     <?php 
     
     $id_produto = $_GET['id_produto'];
 
-$detalhes[prod1] = "Parabéns! Você escolheu: cadeira";
-$detalhes[prod2] = "Parabéns! Você escolheu: mesa";
-$detalhes[prod3] = "Parabéns! Você escolheu: fogão";
-$detalhes[prod4] = "Parabéns! Você escolheu: cama";
+$detalhes[prod1] = "Parabéns! Você escolheu: <strong>cadeira</strong>";
+$detalhes[prod2] = "Parabéns! Você escolheu: <strong>mesa</strong>";
+$detalhes[prod3] = "Parabéns! Você escolheu: <strong>fogão</strong>";
+$detalhes[prod4] = "Parabéns! Você escolheu: <strong>cama</strong>";
 
-echo $detalhes[$id_produto];
+
+echo $detalhes[$id_produto], $img;
 
     ?>
 </div>
