@@ -8,14 +8,13 @@
     <title>Teste PHP</title>
 </head>
 <body>
-
 <div class="container">
     <div class="row"></div>
     <div class=" col-md-4"></div>
     <form action="index.php" method="GET">
     <div class="form-group"></div>
     <div><h1>Catálogo de Produtos</h1></div><br>
-    <label for="nomeProd">Nome do Produto</label>
+    <label for="nomeProd">Escolha um produto</label>
 <select class="form-control" name="id_produto" id="id_produto">
 <option value="prod1">Cadeira</option>
 <option value="prod2">Mesa</option>
@@ -31,13 +30,13 @@
 <div class="col-md-4">
 
     <?php 
+    
     $id_produto = $_GET['id_produto'];
 
-
-$detalhes[prod1] = "Detalhes da cadeira";
-$detalhes[prod2] = "Detalhes da mesa";
-$detalhes[prod3] = "Detalhes do fogão";
-$detalhes[prod4] = "Detalhes da cama";
+$detalhes[prod1] = "Parabéns! Você escolheu: cadeira";
+$detalhes[prod2] = "Parabéns! Você escolheu: mesa";
+$detalhes[prod3] = "Parabéns! Você escolheu: fogão";
+$detalhes[prod4] = "Parabéns! Você escolheu: cama";
 
 echo $detalhes[$id_produto];
 
